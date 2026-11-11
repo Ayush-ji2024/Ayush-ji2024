@@ -20,7 +20,7 @@
 
 - 🎓 **B.Tech in Computer Science & Engineering** — Rashtrakavi Ramdhari Singh Dinkar College of Engineering, Begusarai *(2023 – 2027)*
 - 🏢 **Training-cum-Internship, AI & Data Science using Python** — C-DAC Patna *(June 2025)*
-- 🌾 Rebuilt **Krishi Mitra** into a full-stack ML app — data audit, PyTorch + scikit-learn models, FastAPI backend and a Hindi/English React frontend
+- 🌾 Rebuilt **Krishi Mitra** into a full-stack ML app — data audit, PyTorch + scikit-learn models, FastAPI backend and a Hindi/English React frontend ([live demo](https://krishi-mitra-silk-one.vercel.app))
 - 🏏 Built the **backend and deployment of Kurukshetra**, the live-score website for our college's annual games (team of 3)
 - 🌱 Learning **Data Structures & Algorithms** and sharpening my problem-solving skills
 - 💡 Interested in **Machine Learning, Computer Vision, Cybersecurity** and **Web Development**
@@ -82,19 +82,19 @@
 
 ## 🚀 Featured Projects
 
-### 🌾 [Krishi Mitra](https://github.com/Ayush-ji2024/krishi-mitra) — crop advisor for Indian farmers
+### 🌾 [Krishi Mitra](https://github.com/Ayush-ji2024/krishi-mitra) — crop advisor for Indian farmers · [🌐 Live demo](https://krishi-mitra-silk-one.vercel.app)
 
 <a href="https://github.com/Ayush-ji2024/krishi-mitra">
   <img src="https://raw.githubusercontent.com/Ayush-ji2024/krishi-mitra/main/docs/screenshots/home.png" alt="Krishi Mitra home screen" width="720"/>
 </a>
 
-Soil type from a photo, live local weather from a village name, and crop suggestions that respect the soil — in Hindi and English.
+Soil type from a photo, the usual weather of your village for the growing season, and crop suggestions that respect the soil — in Hindi and English.
 
-- 🔍 **Audited the dataset:** found 57% duplicate images and **100% train–test leakage**; rebuilt a clean, stratified split
-- 🧠 **Soil classifier:** MobileNetV2 transfer learning — **91.1% test accuracy, 0.91 macro-F1**
+- 🔍 **Audited the dataset:** 57% of the images were exact duplicates and **all 341 test images were also in training**; a second audit with perceptual hashing found **204 near-duplicates**. Rebuilt a leak-free, stratified split
+- 🧠 **Soil classifier:** MobileNetV2 transfer learning — **82.4% test accuracy, 0.81 macro-F1** on truly unseen photos (the earlier 91% was inflated by near-duplicates)
 - 🌱 **Crop recommender:** benchmarked 3 models with 5-fold CV; Random Forest — **99.3% accuracy, 100% top-3**
-- ⚙️ **FastAPI backend** with input validation, FAO ECOCROP soil-aware ranking, Open-Meteo weather and **21 tests**
-- 📱 **Mobile-first React frontend** — step-by-step advisor, Hindi / English
+- ⚙️ **FastAPI backend** with input validation, FAO ECOCROP soil-aware ranking, Open-Meteo climate data and **32 tests** run by **CI (GitHub Actions)**
+- 📱 **Mobile-first React frontend** — step-by-step advisor, Hindi / English; deployed on Vercel + Render
 
 `PyTorch` `scikit-learn` `FastAPI` `React` `Vite` `pytest`
 
